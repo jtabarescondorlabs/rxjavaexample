@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity() {
         }).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread())
             .subscribe(object : Observer<String> {
                 override fun onNext(t: String) {
-                    Log.d("single response", "" + t)
+                    Log.d("single response", "" + "" + t)
                 }
 
                 override fun onError(e: Throwable) {
